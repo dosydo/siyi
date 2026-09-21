@@ -35,6 +35,11 @@
 @media(max-width:1000px) and (min-width:721px){.site-header .brand>span{display:none}}
 @media(max-width:720px){.brand{gap:8px}.brand .brand-logo{width:48px;height:48px}.site-footer .brand .brand-logo{width:46px;height:46px}}
 
+/* Customer service QR beside the merchant consultation details. */
+.contact-panel{display:flex;align-items:center;justify-content:flex-end;gap:32px;min-width:0}.contact-details{flex:1}.contact-qr{width:210px;flex:0 0 210px;margin:0;padding:13px 13px 12px;border-radius:22px;background:#fff;color:#17120e;box-shadow:0 18px 44px #0004}.contact-qr img{display:block;width:100%;height:auto;border-radius:12px}.contact-qr figcaption{display:flex;flex-direction:column;gap:2px;padding:10px 3px 0}.contact-qr strong{font-size:15px}.contact-qr span{font-size:12px;color:#6a6761}
+@media(max-width:1000px){.contact-panel{width:100%;justify-content:flex-start}}
+@media(max-width:720px){.contact-panel{flex-direction:column;align-items:flex-start;gap:28px}.contact-details{width:100%}.contact-qr{width:min(240px,100%);flex-basis:auto;align-self:center}}
+
 /* Editorial redesign inspired by the reference site's spatial rhythm. */
 :root{--ink:#11110f;--paper:#efefed;--panel:#f8f8f6;--orange:#ff7518;--orange-soft:#fff0e5;--glass:#171410a8}
 body{background:var(--paper);color:var(--ink);font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;line-height:1.55}
